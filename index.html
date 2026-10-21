@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Sergio Armas | Implantes dentales y carillas en Reynosa (propuesta)</title>
+<meta name="description" content="Prostodoncista en la Col. del Prado, Reynosa. Implantes dentales, carillas de porcelana, dentaduras completas y atención a pacientes de la tercera edad. Citas por WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Idea: un monolito oscuro con un solo acento dorado, el mismo dorado de su logo y su recepción */
+:root{
+  --black:#000000; --surface:#0E0D0C; --line:#3A3835; --cream:#FFF7DD; --muted:#BDB6A6; --gold:#C8AD86; --gold-dark:#A88F69;
+  --r:4px; --sans:"Inter Tight",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--black);color:var(--cream);font-family:var(--sans);font-size:17px;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:var(--gold)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-weight:400;line-height:1.05;margin:0;letter-spacing:-.042em;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding-left:16px;padding-right:16px}
+.tag{font-size:13px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+
+.proposal{background:var(--gold);color:#000;font-size:14px}
+.proposal .wrap{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.proposal button{background:#000;color:var(--cream);border:0;border-radius:var(--r);padding:6px 12px;font:inherit;font-weight:500;cursor:pointer}
+
+header.top{position:sticky;top:0;z-index:20;background:rgba(0,0,0,.94);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:18px;min-height:70px}
+.brand img{height:42px;width:auto}
+nav.main{display:flex;gap:4px;margin-left:auto}
+nav.main a{color:var(--cream);text-decoration:none;font-size:15px;padding:8px 10px}
+nav.main a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 20px;border-radius:var(--r);font:inherit;font-weight:500;font-size:16px;text-decoration:none;border:1px solid transparent;cursor:pointer;line-height:1.2;text-align:center}
+.btn-gold{background:var(--gold);color:#000}
+.btn-gold:hover{background:var(--gold-dark)}
+.btn-line{border-color:var(--cream);color:var(--cream);background:transparent}
+.btn-line:hover{background:var(--cream);color:#000}
+
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding-top:64px;padding-bottom:72px}
+.hero h1{font-size:clamp(42px,5.8vw,78px);margin:16px 0 20px}
+.hero h1 span{color:var(--gold)}
+.hero .lead{color:var(--muted);font-size:19px;max-width:30em}
+.ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.hero figure{margin:0;position:relative}
+.hero figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.creds{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.creds div{padding:20px 16px;border-right:1px solid var(--line);display:grid;gap:2px}
+.creds div:last-child{border-right:0}
+.creds b{font-weight:400;font-size:30px;letter-spacing:-.03em;color:var(--gold)}
+.creds span{color:var(--muted);font-size:15px}
+
+section.block{padding:88px 0}
+.sec-head{display:grid;gap:12px;margin-bottom:34px;max-width:720px}
+.sec-head h2{font-size:clamp(34px,4.4vw,56px)}
+.sec-head p{color:var(--muted);font-size:18px}
+
+.svc{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.svc article{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 20px;display:grid;gap:8px;align-content:start}
+.svc h3{font-size:24px;letter-spacing:-.02em}
+.svc p{color:var(--muted);font-size:16px}
+.svc .tag{font-size:12px}
+
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cases figure{margin:0;display:grid;gap:10px}
+.cases img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r);background:#111}
+.cases figcaption{color:var(--muted);font-size:15px}
+
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.gallery .big{grid-column:span 2;grid-row:span 2}
+.gallery .big img{aspect-ratio:auto;height:100%}
+
+.usa{border:1px solid var(--gold);border-radius:var(--r);padding:28px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.usa h3{font-size:clamp(26px,3vw,36px)}
+.usa p{color:var(--muted);margin-top:8px}
+
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.contact dl{margin:0;display:grid;border-top:1px solid var(--line)}
+.contact dl div{padding:14px 0;border-bottom:1px solid var(--line);display:grid;gap:2px}
+.contact dt{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.contact dd{margin:0;font-size:18px;overflow-wrap:anywhere}
+.status{display:inline-flex;align-items:center;gap:8px}
+.status i{width:9px;height:9px;border-radius:50%;background:#77736B;flex:none}
+.status.is-open i{background:#5BC48A}
+form.qf{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:grid;gap:14px}
+.qf h3{font-size:30px}
+.qf label{display:block;font-size:14px;font-weight:500;margin-bottom:6px;color:var(--cream)}
+.qf input,.qf select,.qf textarea{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #66635F;border-radius:var(--r);background:#000;color:var(--cream)}
+.qf .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.qf .note{font-size:14px;color:var(--muted)}
+.qf .err{color:#F2A08A;font-size:14px}
+
+footer{border-top:1px solid var(--line);padding:32px 0;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer img{height:36px;width:auto}
+
+dialog{border:1px solid var(--line);padding:0;border-radius:var(--r);width:min(600px,calc(100vw - 32px));max-height:calc(100vh - 32px);background:var(--surface);color:var(--cream)}
+dialog::backdrop{background:rgba(0,0,0,.7)}
+.dh{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--surface)}
+.dh h2{font-size:28px}
+.x{background:none;border:0;font-size:28px;line-height:1;cursor:pointer;width:44px;height:44px;color:var(--cream)}
+.db{padding:16px 20px 22px}
+.db ol{margin:0;padding-left:20px;display:grid;gap:12px}
+.db b{display:block;font-weight:500;color:var(--gold)}
+.db span{color:var(--muted);font-size:15px}
+
+@media (max-width:1020px){
+  nav.main{display:none}
+  .top .btn-gold{margin-left:auto}
+  .svc{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .hero .wrap,.contact{grid-template-columns:1fr}
+  .hero .wrap{padding-top:36px;padding-bottom:48px;gap:32px}
+  .cases{grid-template-columns:1fr 1fr}
+  .usa{grid-template-columns:1fr}
+  section.block{padding:56px 0}
+}
+@media (max-width:540px){
+  .brand img{height:34px}
+  .creds{grid-template-columns:1fr}
+  .creds div{border-right:0;border-bottom:1px solid var(--line)}
+  .creds div:last-child{border-bottom:0}
+  .svc,.cases{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  .gallery .big{grid-column:auto;grid-row:auto}
+  .gallery .big img{aspect-ratio:4/3;height:auto}
+  .qf .row{grid-template-columns:1fr}
+  form.qf,.usa{padding:18px}
+  .ctas .btn{width:100%}
+  .top .btn-gold{padding:10px 14px}
+}
+</style>
+<style id="refero-theme">
+/* fonts: family=Inter+Tight:wght@400;500 */
+/* Estilo Refero: Atoms, "obsidian monolith in candlelight". Lienzo negro absoluto, texto crema cálido, un solo acento champaña (coincide con el dorado del logo del doctor), titulares de peso 400 con tracking muy cerrado (-0.042em), reglas finas en lugar de sombras y radios mínimos. */
+:root{
+  --black:#000000; --surface:#0E0D0C; --line:#3A3835; --cream:#FFF7DD; --muted:#BDB6A6; --gold:#C8AD86; --gold-dark:#A88F69;
+  --r:4px; --sans:"Inter Tight",system-ui,sans-serif;
+}
+h1,h2,h3{font-weight:400!important}
+.svc article,.creds div,form.qf,.usa{box-shadow:none}
+</style>
+</head>
+<body>
+
+<div class="proposal" role="note">
+  <div class="wrap">
+    <span>Vista previa de rediseño propuesta para el Dr. Sergio Armas. No es el sitio oficial.</span>
+    <button type="button" id="openChanges">Ver qué mejoramos</button>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="https://www.drsergioarmas.com/wp-content/uploads/logo-drsergioarmas2025.png" alt="Dr. Sergio Armas" width="117" height="42"></a>
+    <nav class="main" aria-label="Principal">
+      <a href="#tratamientos">Tratamientos</a>
+      <a href="#casos">Casos</a>
+      <a href="#instalaciones">Instalaciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-gold" href="https://wa.me/528994704517?text=Hola%20Dr.%20Armas%2C%20quiero%20agendar%20una%20cita%20de%20valoraci%C3%B3n" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="tag">Prostodoncia · Implantología · Estética dental</p>
+      <h1>Una sonrisa completa, <span>con un especialista.</span></h1>
+      <p class="lead">Dr. Sergio Armas Santillán, especialista en Prostodoncia, Odontología Estética y Reconstructiva e Implantología Dental. Implantes, carillas de porcelana y dentaduras completas en la Col. del Prado, Reynosa.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="https://wa.me/528994704517?text=Hola%20Dr.%20Armas%2C%20quiero%20agendar%20una%20cita%20de%20valoraci%C3%B3n" target="_blank" rel="noopener">Agendar valoración</a>
+        <a class="btn btn-line" href="tel:+528999224080">Llamar 899 922 4080</a>
+      </div>
+    </div>
+    <figure><img src="https://www.drsergioarmas.com/wp-content/uploads/1769032629309.jpg" alt="Recepción del consultorio del Dr. Sergio Armas" width="990" height="743"></figure>
+  </div>
+  <div class="wrap creds">
+    <div><b>+25 años</b><span>de experiencia</span></div>
+    <div><b>4453004</b><span>Cédula de especialidad</span></div>
+    <div><b>2832435</b><span>Cédula profesional</span></div>
+  </div>
+</section>
+
+<section class="block" id="tratamientos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="tag">Tratamientos</p>
+      <h2>Soluciones dentales</h2>
+      <p>Como prostodoncista, el doctor atiende también a pacientes de la tercera edad con tratamientos como las dentaduras completas.</p>
+    </div>
+    <div class="svc">
+      <article><span class="tag">01</span><h3>Implantes dentales</h3><p>Reemplazo de piezas perdidas con implantes.</p></article>
+      <article><span class="tag">02</span><h3>Carillas de porcelana</h3><p>Carillas de porcelana y de disilicato de litio.</p></article>
+      <article><span class="tag">03</span><h3>Rehabilitación completa</h3><p>Rehabilitación oral, coronas y puentes dentales.</p></article>
+      <article><span class="tag">04</span><h3>Odontología geriátrica</h3><p>Atención especial a pacientes de la tercera edad y dentaduras completas.</p></article>
+      <article><span class="tag">05</span><h3>Endodoncia</h3><p>Recuperamos y tratamos tus piezas dentales dañadas.</p></article>
+      <article><span class="tag">06</span><h3>Tercer molar</h3><p>Extracción de muelas del juicio.</p></article>
+      <article><span class="tag">07</span><h3>Restauraciones</h3><p>En zirconia y disilicato de litio.</p></article>
+      <article><span class="tag">08</span><h3>Recontorneo gingival</h3><p>Mejora la estética de tu sonrisa.</p></article>
+      <article><span class="tag">09</span><h3>Laboratorio dental</h3><p>Laboratorio propio dentro del consultorio.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="casos" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="tag">Casos clínicos</p>
+      <h2>Antes y después</h2>
+      <p>Casos publicados por el consultorio.</p>
+    </div>
+    <div class="cases">
+      <figure><img src="https://www.drsergioarmas.com/wp-content/uploads/implantes-dentales-dr-sergio-armas-reynosa-may2024-1.jpg" alt="Caso de implantes dentales, antes y después" loading="lazy" width="920" height="811"><figcaption>Implantes dentales</figcaption></figure>
+      <figure><img src="https://www.drsergioarmas.com/wp-content/uploads/CarillasPorcelana-DrSergioArmas-Reynosa8371.jpg" alt="Caso de carillas de porcelana, antes y después" loading="lazy" width="920" height="753"><figcaption>Carillas de porcelana</figcaption></figure>
+      <figure><img src="https://www.drsergioarmas.com/wp-content/uploads/Dentista-Reynosa-DrSergioArmas-Implantes01.jpg" alt="Caso de rehabilitación con implantes" loading="lazy" width="1800" height="1488"><figcaption>Rehabilitación con implantes</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="instalaciones">
+  <div class="wrap">
+    <div class="sec-head"><p class="tag">Instalaciones</p><h2>Consultorio en la Zona Dorada</h2></div>
+    <div class="gallery">
+      <div class="big"><img src="https://www.drsergioarmas.com/wp-content/uploads/area-dental01.jpeg" alt="Área dental" loading="lazy" width="990" height="743"></div>
+      <img src="https://www.drsergioarmas.com/wp-content/uploads/sala-espera2024F.jpg" alt="Sala de espera" loading="lazy" width="900" height="587">
+      <img src="https://www.drsergioarmas.com/wp-content/uploads/operatorios-1.jpg" alt="Sillón dental" loading="lazy" width="920" height="600">
+      <img src="https://www.drsergioarmas.com/wp-content/uploads/laboratorio05.jpg" alt="Laboratorio dental" loading="lazy" width="1100" height="650">
+      <img src="https://www.drsergioarmas.com/wp-content/uploads/cuarto-esterilizacion-1.jpg" alt="Cuarto de esterilización" loading="lazy" width="920" height="600">
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="usa" lang="en">
+      <div>
+        <h3>Coming from Texas?</h3>
+        <p>We are minutes from McAllen. Call us from the U.S. at 011 52 (899) 922 4080 or send us a WhatsApp message.</p>
+      </div>
+      <a class="btn btn-gold" href="https://wa.me/528994704517?text=Hello%20Dr.%20Armas%2C%20I%20would%20like%20to%20schedule%20an%20appointment" target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="contacto" style="background:var(--surface)">
+  <div class="wrap contact">
+    <div>
+      <div class="sec-head" style="margin-bottom:16px"><p class="tag">Contacto</p><h2>Haz tu cita</h2></div>
+      <dl>
+        <div><dt>Estado</dt><dd><span class="status" id="status" aria-live="polite"><i aria-hidden="true"></i><span id="statusText">Horario</span></span></dd></div>
+        <div><dt>Dirección</dt><dd>Calle Ortiz Rubio 610, entre Guerrero y Pedro J. Méndez (Zona Dorada), Col. Del Prado, Reynosa. <a href="https://maps.google.com/?q=26.088935,-98.272477" target="_blank" rel="noopener">Cómo llegar</a></dd></div>
+        <div><dt>Horario</dt><dd>Lunes a viernes de 9:00 a 19:00 · Sábado de 9:00 a 16:00</dd></div>
+        <div><dt>Teléfonos</dt><dd><a href="tel:+528999224080">899 922 4080</a> · Cel. <a href="tel:+528994704517">899 470 4517</a></dd></div>
+        <div><dt>Desde EE. UU.</dt><dd><a href="tel:+528999224080">011 52 (899) 922 4080</a></dd></div>
+        <div><dt>Correo</dt><dd><a href="mailto:contacto@drsergioarmas.com">contacto@drsergioarmas.com</a></dd></div>
+      </dl>
+    </div>
+    <form class="qf" id="qf" novalidate>
+      <h3>Agenda tu valoración</h3>
+      <div class="row">
+        <div><label for="qName">Nombre</label><input id="qName" autocomplete="name" required></div>
+        <div><label for="qDay">Día que prefieres</label><input id="qDay" type="date"></div>
+      </div>
+      <div><label for="qWhat">Me interesa</label>
+        <select id="qWhat"><option>Implantes dentales</option><option>Carillas de porcelana</option><option>Dentadura completa</option><option>Rehabilitación completa</option><option>Endodoncia</option><option>Otro tratamiento</option></select>
+      </div>
+      <button class="btn btn-gold" type="submit">Enviar por WhatsApp</button>
+      <p class="err" id="qErr" role="alert" hidden>Escribe tu nombre para agendar tu cita.</p>
+      <p class="note">Se abre WhatsApp con tu mensaje listo para el consultorio.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="https://www.drsergioarmas.com/wp-content/uploads/logo-drsergioarmas2025.png" alt="Dr. Sergio Armas" width="100" height="36">
+    <span>Aviso de publicidad COFEPRIS: 2428042002A00039</span>
+    <a href="https://www.facebook.com/implantesdrsergioarmas/" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</footer>
+
+<dialog id="changes" aria-labelledby="cT">
+  <div class="dh"><h2 id="cT">Qué mejoramos</h2><button class="x" type="button" data-close aria-label="Cerrar">×</button></div>
+  <div class="db">
+    <ol>
+      <li><b>Celular que se puede tocar</b><span>En la página de Contacto, el (899) 470 4517 y el número para Estados Unidos son texto: desde el celular no se pueden marcar.</span></li>
+      <li><b>WhatsApp para pedir cita</b><span>Hoy el sitio no tiene WhatsApp. Aquí cada botón abre el chat con el mensaje ya escrito.</span></li>
+      <li><b>Un título que Google sí muestra</b><span>El título actual tiene más de 200 caracteres ("Dr. Sergio Armas – Dentista Reynosa – Especialista en Implantes…"); Google solo muestra unos 60. Además no tiene descripción ni título principal.</span></li>
+      <li><b>Experiencia escrita</b><span>En el código que lee Google, el contador dice "Más de 0 Años de Experiencia"; aquí los 25 años están escritos.</span></li>
+      <li><b>Cada tratamiento con su texto</b><span>"Mejoramos tu sonrisa haciéndola más natural y estética" se repite en cuatro tratamientos distintos.</span></li>
+      <li><b>Pacientes de Texas</b><span>Una sección en inglés con el número para llamar desde EE. UU.</span></li>
+      <li><b>Sitio actualizado</b><span>El sitio corre WordPress 5.8, una versión de 2021.</span></li>
+    </ol>
+  </div>
+</dialog>
+
+<script>
+// Abierto ahora: L-V 9:00-19:00, S 9:00-16:00 (hora de Reynosa)
+(function(){
+  const now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Matamoros" }));
+  const d = now.getDay(), m = now.getHours() * 60 + now.getMinutes();
+  const h = d === 0 ? null : d === 6 ? [540, 960] : [540, 1140];
+  const open = !!h && m >= h[0] && m < h[1];
+  const hhmm = x => `${Math.floor(x / 60)}:${String(x % 60).padStart(2, "0")}`;
+  document.getElementById("status").classList.toggle("is-open", open);
+  document.getElementById("statusText").textContent = open ? `Abierto hasta las ${hhmm(h[1])}` : "Cerrado ahora";
+})();
+
+document.getElementById("qf").addEventListener("submit", e => {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const err = document.getElementById("qErr");
+  if (!v("qName")) { err.hidden = false; return; }
+  err.hidden = true;
+  const msg = `Hola Dr. Armas, soy ${v("qName")}. Me interesa: ${v("qWhat")}.` + (v("qDay") ? ` Prefiero el día ${v("qDay")}.` : "");
+  window.open(`https://wa.me/528994704517?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
+});
+
+const dlg = document.getElementById("changes");
+document.getElementById("openChanges").addEventListener("click", () => dlg.showModal());
+document.querySelector("[data-close]").addEventListener("click", () => dlg.close());
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+</script>
+</body>
+</html>
